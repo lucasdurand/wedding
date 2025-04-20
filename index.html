@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Lucas &amp; Beatriz - Cancún Wedding</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Montserrat:wght@300;400&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color1: #E2C9BF;
+            --color2: #D89B7A;
+            --color3: #C66539;
+            --color4: #AFACA1;
+            /* --color5: #6A6C57; */
+            --color5: #31312e;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--color1);
+            color: var(--color5);
+            line-height: 1.6;
+        }
+
+        .language-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        .language-btn {
+            background: var(--color3);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            border-radius: 25px;
+            font-family: 'Montserrat', sans-serif;
+            margin-left: 5px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .language-btn:hover {
+            background: var(--color5);
+            transform: translateY(-2px);
+        }
+
+        header {
+            background: linear-gradient(rgba(106, 108, 87, 0.5), rgba(106, 108, 87, 0.5)),
+                url('https://images.unsplash.com/photo-1525113990976-399916c7d5c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
+            color: white;
+            text-align: center;
+
+            padding: 180px 20px;
+            position: relative;
+        }
+
+        h1 {
+            font-family: "Sacramento", cursive;
+        }
+
+        h2,
+        h3 {
+            /* font-family: 'Playfair Display', serif;
+             */
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 1px;
+        }
+
+        .header-subtitle {
+            font-size: 1.8rem;
+            font-family: "Sacramento", cursive;
+            margin-top: 15px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            font-weight: 300;
+        }
+
+        .floral-divider {
+            width: 100%;
+            height: 45px;
+            margin: 40px auto;
+            background-image: url('flowers_top.png');
+            background-size: 30%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .floral-alt {
+            background-image: url('flowers_bottom.png')
+        }
+
+        section {
+            padding: 1rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .sacramento-regular {
+            font-family: "Sacramento", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .details {
+            background: var(--color2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .location {
+            background: var(--color4);
+        }
+
+        .activities {
+            background: var(--color1);
+        }
+
+        .map-container {
+            margin-top: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border: 8px solid white;
+        }
+
+        .map-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: var(--color3);
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .map-link:hover {
+            text-decoration: underline;
+            transform: translateX(5px);
+        }
+
+        .timeline {
+            background: var(--color1);
+            position: relative;
+            padding-left: 50px;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 30px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--color3);
+        }
+
+        .timeline-day {
+            font-size: 1.8rem;
+            color: var(--color3);
+            margin: 50px 0 20px;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        /* .timeline-day::before {
+            content: "";
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--color3);
+            border: 5px solid var(--color1);
+        } */
+
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 30px;
+            margin: 30px 0;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -33px;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--color3);
+            border: 5px solid var(--color1);
+        }
+
+        .timeline-time {
+            font-weight: bold;
+            color: var(--color3);
+            text-align: right;
+        }
+
+        .timeline-info {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+
+        .hotel-info {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .activity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-auto-rows: auto;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .activity-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            /* margin: 20px 0; */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .map-card {
+            grid-row: span 2;
+            overflow: hidden;
+            padding: 0px;
+            /* flush with the card edge */
+        }
+
+        .map-card img {
+            width: 100%;
+            height: 100%;
+            /* object-fit: cover; */
+            display: block;
+        }
+
+        @media (max-width: 500px) {
+            .grid {
+                grid-auto-rows: 150px;
+            }
+        }
+
+        .activity-icon {
+            font-size: 2rem;
+            color: var(--color3);
+            min-width: 40px;
+            text-align: center;
+        }
+
+        .activity-content {
+            flex: 1;
+        }
+
+        .activity-card h3 {
+            color: var(--color3);
+            margin-top: 0;
+        }
+
+        .rsvp-btn {
+            display: inline-block;
+            background: var(--color3);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            margin: 40px auto;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .rsvp-btn:hover {
+            background: var(--color5);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .rsvp-container {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        footer {
+            background: var(--color5);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Countdown Styles */
+        .countdown-container {
+            margin: 40px auto 0;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .countdown h3 {
+            margin: 0 0 15px 0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .countdown-unit {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 70px;
+        }
+
+        .countdown-unit span {
+            font-size: 2.5rem;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .countdown-unit small {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: white;
+            opacity: 0.8;
+        }
+
+        .countdown-separator {
+            font-size: 2rem;
+            color: white;
+            margin-top: -15px;
+            opacity: 0.7;
+        }
+
+        /* FAQ Styles */
+        .faq-section {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .faq-item {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            color: var(--color3);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .faq-question i {
+            margin-right: 10px;
+            color: var(--color5);
+        }
+
+        /* Accommodation Styles */
+        .transport-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .transport-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .transport-card h4 {
+            color: var(--color3);
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .transport-card i {
+            margin-right: 10px;
+        }
+
+        .nearby-options {
+            margin-top: 40px;
+        }
+
+        .hotel-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .hotel-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .hotel-card h5 {
+            margin: 0 0 5px 0;
+            color: var(--color5);
+        }
+
+        .hotel-distance {
+            font-size: 0.9rem;
+            color: var(--color3);
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+
+            .header-subtitle {
+                font-size: 1.4rem;
+            }
+
+            .timeline {
+                padding-left: 30px;
+            }
+
+            .timeline-item {
+                grid-template-columns: 1fr;
+                padding-left: 0;
+            }
+
+            .timeline-item::before {
+                left: -13.5px;
+            }
+
+            .activity-card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .activity-icon {
+                margin-bottom: 15px;
+            }
+
+            .countdown-unit {
+                min-width: 50px;
+            }
+
+            .countdown-unit span {
+                font-size: 1.8rem;
+            }
+
+            .countdown-unit small {
+                font-size: 0.7rem;
+            }
+
+            .countdown-separator {
+                font-size: 1.5rem;
+                margin-top: -10px;
+            }
+
+            .transport-options {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="mobile-icon-nav">
+        <ul>
+            <li><a href="#header" title="Home"><i class="fas fa-home"></i></a></li>
+            <li><a href="#location" title="Location"><i class="fas fa-map-pin"></i></a></li>
+            <li><a href="#timeline" title="Timeline"><i class="fas fa-calendar-alt"></i></a></li>
+            <li><a href="#activities" title="Activities"><i class="fas fa-map-marked-alt"></i></a></li>
+            <li><a href="#faq" title="FAQ"><i class="fas fa-question"></i></a></li>
+            <li><a href="#rsvp" title="RSVP"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+    </nav>
+
+    <div class="language-toggle">
+        <button class="language-btn" onclick="toggleLanguage('en')">EN</button>
+        <button class="language-btn" onclick="toggleLanguage('es')">ES</button>
+    </div>
+    <header id="header">
+        <h1 class="lang-en">Lucas &amp; Beatriz</h1>
+        <h1 class="lang-es hidden">Lucas &amp; Beatriz</h1>
+        <div class="header-subtitle lang-en">March 7, 2026 • Cancún, Mexico</div>
+        <div class="header-subtitle lang-es hidden">7 de Marzo, 2026 • Cancún, México</div>
+        <!-- Countdown Clock -->
+        <div class="countdown-container">
+            <div class="countdown lang-en">
+                <h3>Counting Down To Our Wedding</h3>
+                <div class="countdown-timer">
+                    <div class="countdown-unit">
+                        <span id="days">00</span>
+                        <small>Days</small>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-unit">
+                        <span id="hours">00</span>
+                        <small>Hours</small>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-unit">
+                        <span id="minutes">00</span>
+                        <small>Minutes</small>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-unit">
+                        <span id="seconds">00</span>
+                        <small>Seconds</small>
+                    </div>
+                </div>
+            </div>
+            <div class="countdown lang-es hidden">
+                <h3>Cuenta Regresiva Para Nuestra Boda</h3>
+                <div class="countdown-timer">
+                    <div class="countdown-unit">
+                        <span id="days-es">00</span>
+                        <small>Días</small>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-unit">
+                        <span id="hours-es">00</span>
+                        <small>Horas</small>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-unit">
+                        <span id="minutes-es">00</span>
+                        <small>Minutos</small>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-unit">
+                        <span id="seconds-es">00</span>
+                        <small>Segundos</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Our Celebration Section -->
+    <section class="details">
+        <div class="floral-divider"></div>
+        <div class="lang-en">
+            <h2>Our Celebration</h2>
+            <p>Join us for a magical beachfront celebration at Jardin del Mar in Cancún. We'll exchange vows as the
+                sun
+                sets over the Caribbean, followed by cocktails, dinner with live saxophone music, and dancing under
+                the
+                stars.</p>
+            <p>The evening will culminate with mariachis and tacos at 2am - a true Mexican fiesta!</p>
+        </div>
+        <div class="lang-es hidden">
+            <h2>Nuestra Celebración</h2>
+            <p>Acompáñanos en una celebración mágica frente al mar en Jardín del Mar en Cancún. Intercambiaremos
+                nuestros votos mientras el sol se pone sobre el Caribe, seguido de cócteles, cena con música de
+                saxofón
+                en vivo y baile bajo las estrellas.</p>
+            <p>¡La noche culminará con mariachis y tacos a las 2am - una verdadera fiesta mexicana!</p>
+        </div>
+        <div class="floral-divider floral-alt"></div>
+    </section>
+    <!-- TODO: integrate these changes better into CSS and the overall structure -->
+    <div style="display:flex;">
+        <img src="./cancun-destination.png" style="margin: 1rem auto; width:100%; max-width:800px;" />
+    </div>
+    <!-- Location & Accommodation Section -->
+    <section class="location" id="location">
+        <div class="lang-en">
+            <h2>Ceremony &amp; Accommodations</h2>
+            <h3>Jardin del Mar</h3>
+            <p>Blvd. Kukulcan Km 13.5, Zona Hotelera<br />Cancún, Quintana Roo 77500, Mexico</p>
+            <a class="map-link" href="https://www.jardindelmar.com" target="_blank">Visit Jardin del Mar Website →</a>
+            <div class="map-container">
+                <iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2380643.159976702!2d-87.2372621!3d20.9470756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f3!3m3!1m2!1s0x8f4e86bdd8a05967%3A0x194721cc2728ea1b!2sJard%C3%ADn%20del%20Mar!5e0!3m2!1sen!2sus!16s%2Fg%2F11c75m3fl3&amp;markers=color:red%7C20.9470756,-87.2372621&amp;zoom=15"
+                    style="border:0;" width="100%">
+                </iframe>
+            </div>
+            <div class="hotel-info">
+                <h3>Guest Accommodations</h3>
+                <p><strong>Emporio Cancún</strong><br />
+                    Blvd. Kukulcan Km 17, Zona Hotelera<br />
+                    Cancún, Quintana Roo 77500, Mexico</p>
+                <p>Room block code: LUCAS-BEATRIZ</p>
+                <!-- Transportation Options -->
+                <h4>Getting to Emporio Cancún</h4>
+                <div class="transport-options">
+                    <div class="transport-card">
+                        <h4><i class="fas fa-taxi"></i> Taxi</h4>
+                        <p>Official airport taxis cost approximately $50 USD for up to 4 passengers. Travel time: ~30
+                            minutes.</p>
+                    </div>
+                    <div class="transport-card">
+                        <h4><i class="fas fa-shuttle-van"></i> Hotel Shuttle</h4>
+                        <p>Emporio offers private transfers for $65 USD each way (reserve in advance).</p>
+                    </div>
+                    <div class="transport-card">
+                        <h4><i class="fas fa-car"></i> Rental Car</h4>
+                        <p>Major rental agencies available at airport. Parking available at hotel for $15 USD/day.</p>
+                    </div>
+                </div>
+                <!-- Nearby Options -->
+                <div class="nearby-options">
+                    <h4>Alternative Accommodations Nearby:</h4>
+                    <div class="hotel-list">
+                        <div class="hotel-card">
+                            <h5>Hyatt Ziva Cancún</h5>
+                            <div class="hotel-distance">0.3 miles from venue</div>
+                            <p>All-inclusive luxury resort</p>
+                        </div>
+                        <div class="hotel-card">
+                            <h5>Marriott Cancún Resort</h5>
+                            <div class="hotel-distance">0.5 miles from venue</div>
+                            <p>Beachfront with spa facilities</p>
+                        </div>
+                        <div class="hotel-card">
+                            <h5>Airbnb Options</h5>
+                            <div class="hotel-distance">Various locations</div>
+                            <p>Many condos available in Hotel Zone</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lang-es hidden">
+            <!-- Spanish version of location section -->
+        </div>
+    </section>
+    <!-- Timeline Section -->
+    <section class="timeline" id="timeline">
+        <!-- English Timeline -->
+        <div class="lang-en">
+            <h2>Event Timeline</h2>
+            <div class="timeline-day">Wednesday</div>
+            <div class="timeline-item">
+                <div class="timeline-time">All Day</div>
+                <div class="timeline-info">Family arrives and settles in</div>
+            </div>
+            <div class="timeline-day">Thursday</div>
+            <div class="timeline-item">
+                <div class="timeline-time">Evening</div>
+                <div class="timeline-info">Guests arrive, family dinner at Navios restaurant</div>
+            </div>
+            <div class="timeline-day">Friday</div>
+            <div class="timeline-item">
+                <div class="timeline-time">7:00 PM</div>
+                <div class="timeline-info">Icebreaker event at the hotel: drinks, canapés, and mingling</div>
+            </div>
+            <div class="timeline-day">Saturday</div>
+            <div class="timeline-item">
+                <div class="timeline-time">6:00 PM</div>
+                <div class="timeline-info">Wedding ceremony begins</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">7:00 PM</div>
+                <div class="timeline-info">Cocktail hour</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">8:00 PM</div>
+                <div class="timeline-info">Dinner and live saxophone music</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">10:00 PM</div>
+                <div class="timeline-info">Dancing with DJ</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">2:00 AM</div>
+                <div class="timeline-info">Mariachis and tacos to close the night!</div>
+            </div>
+        </div>
+        <!-- Spanish Timeline -->
+        <div class="lang-es hidden">
+            <h2>Programa del Evento</h2>
+            <div class="timeline-day">Miércoles</div>
+            <div class="timeline-item">
+                <div class="timeline-time">Todo el día</div>
+                <div class="timeline-info">La familia llega y se instala</div>
+            </div>
+            <div class="timeline-day">Jueves</div>
+            <div class="timeline-item">
+                <div class="timeline-time">Tarde</div>
+                <div class="timeline-info">Llegan los invitados, cena familiar en el restaurante Navios</div>
+            </div>
+            <div class="timeline-day">Viernes</div>
+            <div class="timeline-item">
+                <div class="timeline-time">7:00 PM</div>
+                <div class="timeline-info">Evento de bienvenida en el hotel: bebidas, canapés y convivencia</div>
+            </div>
+            <div class="timeline-day">Sábado</div>
+            <div class="timeline-item">
+                <div class="timeline-time">6:00 PM</div>
+                <div class="timeline-info">Comienza la ceremonia</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">7:00 PM</div>
+                <div class="timeline-info">Hora del cóctel</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">8:00 PM</div>
+                <div class="timeline-info">Cena con música de saxofón en vivo</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">10:00 PM</div>
+                <div class="timeline-info">Baile con DJ</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">2:00 AM</div>
+                <div class="timeline-info">¡Mariachis y tacos para cerrar la noche!</div>
+            </div>
+        </div>
+    </section>
+    <!-- Existing timeline content -->
+    <section class="activities" id="activities">
+        <div class="lang-en">
+            <h2>Suggested Activities</h2>
+            <p>There is so much to explore in this beautiful Mayan Riviera and these suggestions below are by no
+                means exhaustive.</p>
+            <div class="activity-grid">
+                <div class="activity-card">
+                    <div class="activity-icon"><i class="fas fa-ship"></i></div>
+                    <div class="activity-content">
+                        <h3>Isla Mujeres</h3>
+                        <p>Take a ferry to Isla Mujeres and enjoy Playa Norte, Punta Sur, snorkeling, and more. It’s a
+                            great
+                            day trip from Cancún!</p>
+                    </div>
+                </div>
+                <div class="activity-card map-card">
+                    <img src="cancun-local-attractions.png">
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon"><i class="fas fa-umbrella-beach"></i></div>
+                    <div class="activity-content">
+                        <h3>Hotel Zone Beaches</h3>
+                        <p>Relax on the beautiful sandy beaches of Cancún’s Hotel Zone — Playa Delfines and Playa Chac
+                            Mool
+                            are guest favorites.</p>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon"><i class="fas fa-utensils"></i></div>
+                    <div class="activity-content">
+                        <h3>Dine by the Lagoon</h3>
+                        <p>Enjoy a romantic meal overlooking Nichupté Lagoon at restaurants like Thai Lounge or La
+                            Destilería.</p>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon"><i class="fas fa-landmark"></i></div>
+                    <div class="activity-content">
+                        <h3>Archaeological Sites</h3>
+                        <p>Visit nearby ruins like El Rey in the Hotel Zone, or plan a day trip to Tulum or Chichén Itzá
+                            for
+                            a deeper dive into Mayan history.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="lang-es hidden">
+
+            <h2>Actividades Sugeridas</h2>
+            <div class="activity-grid">
+                <div class="activity-card">
+                    <div class="activity-icon"><i class="fas fa-ship"></i></div>
+                    <div class="activity-content">
+                        <h3>Isla Mujeres</h3>
+                        <p>Toma un ferry a Isla Mujeres y disfruta de Playa Norte, Punta Sur, esnórquel y más. ¡Es
+                            una
+                            excelente excursión de un día desde Cancún!</p>
+                    </div>
+                </div>
+                <div class="activity-card map-card">
+                    <img src="cancun-local-attractions.png" style="max-width:100%; margin: 1rem auto;">
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon"><i class="fas fa-umbrella-beach"></i></div>
+                    <div class="activity-content">
+                        <h3>Playas de la Zona Hotelera</h3>
+                        <p>Relájate en las hermosas playas de la Zona Hotelera de Cancún — Playa Delfines y Playa
+                            Chac
+                            Mool
+                            son favoritas entre los visitantes.</p>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon"><i class="fas fa-utensils"></i></div>
+                    <div class="activity-content">
+                        <h3>Cena en la Laguna</h3>
+                        <p>Disfruta de una cena romántica con vista a la Laguna Nichupté en restaurantes como Thai
+                            Lounge o
+                            La Destilería.</p>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon"><i class="fas fa-landmark"></i></div>
+                    <div class="activity-content">
+                        <h3>Sitios Arqueológicos</h3>
+                        <p>Visita ruinas cercanas como El Rey en la Zona Hotelera o planea una excursión a Tulum o
+                            Chichén
+                            Itzá para conocer más sobre la historia maya.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="lang-en">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <i class="fas fa-child"></i>
+                    <span>Are children welcome at the wedding?</span>
+                </div>
+                <p>While we love your little ones, this will be an adults-only celebration. We appreciate you making
+                    arrangements so you can celebrate with us!</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <i class="fas fa-shoe-prints"></i>
+                    <span>What should I wear for the beach ceremony?</span>
+                </div>
+                <p>Please choose footwear appropriate for sand - wedges, block heels, or sandals are perfect. Stilettos
+                    will sink! The dress code is formal beach attire.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <span>What's the weather typically like in March?</span>
+                </div>
+                <p>March is ideal in Cancún with average highs of 82°F (28°C) and lows of 70°F (21°C). Evenings can be
+                    breezy, so bring a light wrap.</p>
+            </div>
+        </div>
+        <div class="lang-es hidden">
+            <!-- Spanish version of FAQs -->
+        </div>
+    </section>
+    <!-- RSVP Section -->
+    <div class="rsvp-container" id="rsvp">
+        <a class="rsvp-btn lang-en" href="#rsvp">RSVP Now</a>
+        <a class="rsvp-btn lang-es hidden" href="#rsvp">Confirmar Asistencia</a>
+    </div>
+    <footer>
+        <div class="lang-en">
+            <p>We can't wait to celebrate with you!</p>
+            <p>For any questions, please contact Beatriz's mother at <a href="/cdn-cgi/l/email-protection"
+                    class="__cf_email__" data-cfemail="f39e92819a92b3968b929e839f96dd909c9e">[email&#160;protected]</a>
+            </p>
+        </div>
+        <div class="lang-es hidden">
+            <p>¡Estamos ansiosos por celebrar con ustedes!</p>
+            <p>Para cualquier pregunta, por favor contacten a la madre de Beatriz en <a
+                    href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                    data-cfemail="412c20332820012439202c312d246f222e2c">[email&#160;protected]</a></p>
+        </div>
+    </footer>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
+        // Language Toggle
+        function toggleLanguage(lang) {
+            document.querySelectorAll('.lang-en, .lang-es').forEach(el => {
+                el.classList.add('hidden');
+            });
+            document.querySelectorAll('.lang-' + lang).forEach(el => {
+                el.classList.remove('hidden');
+            });
+        }
+
+        // Countdown Timer
+        const weddingDate = new Date('March 7, 2026 17:00:00').getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Update English countdown
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+
+            // Update Spanish countdown
+            document.getElementById('days-es').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours-es').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes-es').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds-es').textContent = seconds.toString().padStart(2, '0');
+
+            if (distance < 0) {
+                clearInterval(countdownTimer);
+                document.querySelectorAll('.countdown-timer').forEach(el => {
+                    el.innerHTML = '<div class="wedding-day-message">Today is the day!</div>';
+                });
+            }
+        }
+
+        const countdownTimer = setInterval(updateCountdown, 1000);
+        updateCountdown();
+        toggleLanguage('en'); // Initialize with English
+    </script>
+    <style>
+        @media (max-width: 768px) {
+            nav {
+                position: fixed !important;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                background: rgba(175, 172, 161, 0.9);
+                padding: 10px;
+                border-radius: 0 10px 10px 0;
+                z-index: 1000;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+            }
+
+            nav ul li a {
+                font-size: 0.9rem;
+            }
+        }
+
+        nav ul li a.active {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = ['header', 'timeline', 'activities', 'location', 'rsvp'];
+            const navLinks = {};
+
+            sections.forEach(id => {
+                navLinks[id] = document.querySelector(`nav a[href="#${id}"]`);
+            });
+
+            function activateLink() {
+                let fromTop = window.scrollY + 100;
+                let currentId = '';
+                sections.forEach(id => {
+                    const section = document.getElementById(id);
+                    if (section && section.offsetTop <= fromTop) {
+                        currentId = id;
+                    }
+                });
+
+                for (const id in navLinks) {
+                    navLinks[id].classList.remove("active");
+                }
+                if (currentId && navLinks[currentId]) {
+                    navLinks[currentId].classList.add("active");
+                }
+            }
+
+            window.addEventListener("scroll", activateLink);
+            activateLink();
+        });
+    </script>
+
+    <style>
+        .mobile-icon-nav {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background: rgba(175, 172, 161, 0.95);
+            padding: 10px 5px;
+            border-radius: 0 10px 10px 0;
+            z-index: 1000;
+        }
+
+        .mobile-icon-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .mobile-icon-nav ul li a {
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-icon-nav ul li a.active i {
+            font-size: 1.6rem;
+            color: #C66539;
+        }
+
+        /* @media (min-width: 769px) {
+            .mobile-icon-nav {
+                display: none;
+            }
+        } */
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = ['header', 'location', 'timeline', 'activities', 'faq', 'rsvp'];
+            const navLinks = {};
+
+            sections.forEach(id => {
+                navLinks[id] = document.querySelector(`.mobile-icon-nav a[href="#${id}"]`);
+            });
+
+            function activateLink() {
+                let fromTop = window.scrollY + 120;
+                let currentId = '';
+                sections.forEach(id => {
+                    const section = document.getElementById(id);
+                    if (section && section.offsetTop <= fromTop) {
+                        currentId = id;
+                    }
+                });
+
+                for (const id in navLinks) {
+                    navLinks[id].classList.remove("active");
+                }
+                if (currentId && navLinks[currentId]) {
+                    navLinks[currentId].classList.add("active");
+                }
+            }
+
+            window.addEventListener("scroll", activateLink);
+            activateLink();
+        });
+    </script>
+</body>
+
+</html>
