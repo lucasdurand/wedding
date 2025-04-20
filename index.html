@@ -95,20 +95,20 @@
             width: 100%;
             height: 45px;
             margin: 40px auto;
-            background-image: url('flowers_top.png');
+            background-image: url('./assets/flowers/flowers_top.png');
             background-size: 30%;
             background-repeat: no-repeat;
             background-position: center;
         }
 
         .floral-alt {
-            background-image: url('flowers_bottom.png')
+            background-image: url('./assets/flowers/flowers_bottom.png')
         }
 
         section {
             padding: 1rem;
             max-width: 1000px;
-            margin: 0 auto;
+            margin: 1rem auto;
             position: relative;
         }
 
@@ -159,6 +159,7 @@
             position: relative;
             padding-left: 50px;
         }
+
 
         .timeline::before {
             content: "";
@@ -479,6 +480,11 @@
                 padding-left: 30px;
             }
 
+            section h2 {
+                text-align: center;
+            }
+
+
             .timeline-item {
                 grid-template-columns: 1fr;
                 padding-left: 0;
@@ -487,6 +493,11 @@
             .timeline-item::before {
                 left: -13.5px;
             }
+
+            .timeline-info {
+                margin-left: 1rem;
+            }
+
 
             .activity-card {
                 flex-direction: column;
@@ -618,8 +629,8 @@
         <div class="floral-divider floral-alt"></div>
     </section>
     <!-- TODO: integrate these changes better into CSS and the overall structure -->
-    <div style="display:flex;">
-        <img src="./cancun-destination.png" style="margin: 1rem auto; width:100%; max-width:800px;" />
+    <div style="display:flex; justify-content:center;">
+        <img src="./cancun-destination.png" style="width:100%; max-width:800px;" />
     </div>
     <!-- Location & Accommodation Section -->
     <section class="location" id="location">
@@ -784,7 +795,7 @@
                     </div>
                 </div>
                 <div class="activity-card map-card">
-                    <img src="cancun-local-attractions.png">
+                    <img src="./assets/cancun-local-attractions.png">
                 </div>
 
                 <div class="activity-card">
@@ -830,7 +841,7 @@
                     </div>
                 </div>
                 <div class="activity-card map-card">
-                    <img src="cancun-local-attractions.png" style="max-width:100%; margin: 1rem auto;">
+                    <img src="./assets/cancun-local-attractions.png" style="max-width:100%; margin: 1rem auto;">
                 </div>
 
                 <div class="activity-card">
@@ -904,6 +915,36 @@
         <a class="rsvp-btn lang-en" href="#rsvp">RSVP Now</a>
         <a class="rsvp-btn lang-es hidden" href="#rsvp">Confirmar Asistencia</a>
     </div>
+
+    <section class="details" style="margin-bottom:1rem;">
+        <div class=" lang-en">
+            <h2 style="text-align:center;">Wedding Week!</h2>
+            <p>It's time! Here are some helpful links. Please share any photos or videos you take at our events using
+                the orange QR code below! And if you feel like a challenge, try out one of our favourite games,
+                Connections!
+            </p>
+            <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                <div class="activity-card" style="margin:0.5rem;display:block;">
+                    <a href="https://photos.app.goo.gl/HhcwBdpmeCpjQpxE9">
+                        <img src="./assets/qr/photos-qr-code.png" style="width:100%;">
+                    </a>
+                </div>
+                <div class="activity-card" style="margin:0.5rem; display:block; overflow-wrap:anywhere;">
+                    <a href="https://www.instagram.com/explore/search/keyword/?q=%23BetyAndLucas">
+                        <img src="./assets/qr/instagram-qr-code.png" style="width:100%;">
+                    </a>
+                    #BetyAndLucas
+                    #BeachPleaseItsWeddingWeek
+                </div>
+
+                <div class="activity-card" style="margin:0.5rem;display:block;">
+                    <a href="https://connectionsplus.io/game/u9Uic4" border="0" style="cursor:default"
+                        rel="nofollow"><img src="./assets/qr/connections-qr-code.png" style="width:100%;"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="lang-en">
             <p>We can't wait to celebrate with you!</p>
