@@ -24,3 +24,16 @@ function initializeLanguage() {
 
 // Hook into page load
 document.addEventListener('DOMContentLoaded', initializeLanguage);
+
+function passthroughParamsToLink(id) {
+    const link = document.getElementById(id);
+
+    link.addEventListener('click', function (event) {
+        // Before navigating, update the href to include current params
+        const currentParams = window.location.search;
+
+        const [baseUrl] = link.href.split('?');
+        link.href = baseUrl + currentParams;
+        // Let the click proceed
+    });
+}

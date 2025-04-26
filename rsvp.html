@@ -27,7 +27,7 @@
                 <object type="image/svg+xml" width="100%" data="./assets/wax-seal.svg" class="wax-seal"></object>
             </div>
             <div class="glitter"></div>
-            <a href="/" class="invitation" target="_blank">
+            <a href="/" class="invitation" id="site-link" target="_blank">
                 <!-- <div class="invitation-text">
                     <div class="lang-es hidden">Invitación Virtual Para La Boda de <br /> Beatriz A. Fernández Campos
                         <br />
@@ -46,5 +46,8 @@
         </div>
     </div>
 </body>
+<script>
+    passthroughParamsToLink('site-link'); /* Keep English/Spanish choice for main site */
+</script>
 
 </html>
