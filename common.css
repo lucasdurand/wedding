@@ -1,0 +1,28 @@
+.language-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.language-btn {
+    background: var(--color3);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 5px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.language-btn:hover {
+    background: var(--color5);
+    transform: translateY(-2px);
+}
+
+.hidden {
+    display: none;
+}
