@@ -4,6 +4,7 @@
     --color3: #C4622D;
     --color4: #A7C3A3;
     --color5: #4A4A4A;
+    --timeline-color:var(--color4);
 }
 
 body {
@@ -12,6 +13,10 @@ body {
     background-color: var(--color1);
     color: var(--color5);
     line-height: 1.6;
+}
+
+body{
+    background-image: url('assets/leaves/floral-background.png');
 }
 
 header {
@@ -49,20 +54,6 @@ h1 {
     font-weight: 300;
 }
 
-.floral-divider {
-    width: 100%;
-    height: 45px;
-    margin: 40px auto;
-    background-image: url('./assets/flowers/flowers_top.png');
-    background-size: 30%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.floral-alt {
-    background-image: url('./assets/flowers/flowers_bottom.png')
-}
-
 section {
     padding: 1rem;
     max-width: 1000px;
@@ -80,13 +71,13 @@ section {
 .details {
     background: var(--color2);
     position: relative;
-    overflow: hidden;
-    display:flex;
+    /* overflow: hidden; */
     gap: 1rem;
 }
 
 .location {
     background: var(--color4);
+    padding-top: 0px; /*allow seamless elements in this one*/
 }
 
 .activities {
@@ -94,11 +85,15 @@ section {
 }
 
 .map-container {
-    margin-top: 30px;
-    border-radius: 10px;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    border: 8px solid white;
+    height:250px;
+    margin-bottom:1rem;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
+    /* border: 8px solid white; */
 }
 
 .map-link {
@@ -116,11 +111,13 @@ section {
 }
 
 .timeline {
-    background: var(--color1);
     position: relative;
     padding-left: 50px;
 }
 
+#timeline{
+    background: var(--color1);
+}
 
 .timeline::before {
     content: "";
@@ -129,7 +126,7 @@ section {
     top: 0;
     bottom: 0;
     width: 3px;
-    background: var(--color3);
+    background: var(--timeline-color);
 }
 
 .timeline::after {
@@ -139,7 +136,7 @@ section {
     bottom: -2rem;
     /* transform: translateX(-50%); */
     font-size: 2rem;
-    color: var(--color3);
+    color: var(--timeline-color);
     padding: 0px;
 }
 
@@ -151,6 +148,17 @@ section {
     padding-left: 30px;
 }
 
+.timeline-day:first-child::before {
+    content: '▲';
+    position: absolute;
+    top: -2rem;
+    left: -33.5px;
+    bottom: -2rem;
+    /* transform: translateX(-50%); */
+    font-size: 2rem;
+    color: var(--timeline-color);
+    padding: 0px;
+}
 .timeline-item {
     display: grid;
     grid-template-columns: 120px 1fr;
@@ -163,12 +171,12 @@ section {
 .timeline-item::before {
     content: "";
     position: absolute;
-    left: -33px;
+    left: -33.5px;
     top: 10px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: var(--color3);
+    background: var(--timeline-color);
     border: 5px solid var(--color1);
 }
 
@@ -188,9 +196,9 @@ section {
 
 .hotel-info {
     background: white;
-    padding: 25px;
-    border-radius: 10px;
-    margin-top: 30px;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
@@ -253,11 +261,11 @@ section {
     display: inline-block;
     background: var(--color3);
     color: white;
-    padding: 15px 30px;
+    padding: 2rem 4rem;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 1.5rem;
     font-weight: bold;
-    margin: 40px auto;
+    margin: 2rem auto;
     text-align: center;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -377,9 +385,9 @@ footer {
 
 .transport-card {
     background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
 
 .transport-card h4 {
@@ -406,9 +414,9 @@ footer {
 
 .hotel-card {
     background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
 }
 
 .hotel-card h5 {
@@ -484,6 +492,11 @@ footer {
     .timeline-item::before {
         left: -13.5px;
     }
+
+    .timeline-day:first-child::before {
+        left: -13.5px;
+    }
+    
 
     .timeline-info {
         margin-left: 1rem;

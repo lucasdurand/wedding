@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <link href="./common.css" rel="stylesheet" />
     <link href="./index.css" rel="stylesheet" />
+    <link href="./leaves.css" rel="stylesheet" />
     <script src="./common.js"></script>
 </head>
 
@@ -22,6 +23,7 @@
     <nav class="mobile-icon-nav">
         <ul>
             <li><a href="#header" title="Home"><i class="fas fa-home"></i></a></li>
+            <li><a href="#about" title="About Us"><i class="fas fa-address-card"></i></a></li>
             <li><a href="#location" title="Location"><i class="fas fa-map-pin"></i></a></li>
             <li><a href="#timeline" title="Timeline"><i class="fas fa-timeline"></i></a></li>
             <li><a href="#activities" title="Activities"><i class="fas fa-puzzle-piece"></i></a></li>
@@ -96,9 +98,13 @@
             </div>
         </div>
     </header>
+    <div class="leaf-divider"></div>
+
     <!-- About Us -->
     <section class="about-us" id="about">
-        <div class="floral-divider"></div>
+        <!-- <div class="leaf-decoration top-left"></div>
+        <div class="leaf-decoration top-right"></div> -->
+
         <div class="lang-en">
             <h2>About Us</h2>
             <p>From the hospital halls to the rhythm of jazz — Beatriz and Lucas might seem like an unlikely pair, but
@@ -125,13 +131,13 @@
                 pero su historia siempre ha seguido su propio ritmo.</p>
             <div class="about-cards">
                 <div class="about-card">
-                    <img src="assets/about/bety-doctor.jpg" alt="Bety trabajando" />
+                    <img src="assets/photos/bety-doctor.jpg" alt="Bety trabajando" />
                     <h3>Beatriz</h3>
                     <p>Una doctora dedicada con un corazón de oro (y nervios de acero). Beatriz es calma en el caos, la
                         primera en llegar y la última en dejar de bailar.</p>
                 </div>
                 <div class="about-card">
-                    <img src="assets/about/lucas-sax.jpg" alt="Lucas tocando sax" />
+                    <img src="assets/photos/lucas-sax.jpg" alt="Lucas tocando sax" />
                     <h3>Lucas</h3>
                     <p>Un dios del saxofón con pasión por las improvisaciones nocturnas y un buen mezcal. Lucas pone el
                         ritmo, las risas y un toque de locura divertida.</p>
@@ -139,51 +145,81 @@
             </div>
         </div>
 
-        <div class="floral-divider floral-alt"></div>
     </section>
+
+    <!-- <div class="leaf-divider"></div> -->
 
     <!-- Our Celebration Section -->
-    <section class="details">
-        <!-- <div class="floral-divider"></div> -->
-        <div class="pair-left" style="flex:1; background:#fbfbfb4f; padding:0 1rem 0 1rem;">
-            <div class="lang-en">
-                <h2>Our Celebration</h2>
-                <p>Join us for a magical beachfront celebration at Jardin del Mar in Cancún. We'll exchange vows as the
-                    sun
-                    sets over the Caribbean, followed by cocktails, dinner with live saxophone music, and dancing under
-                    the
-                    stars.</p>
-                <p>The evening will culminate with mariachis and tacos at 2am - a true Mexican fiesta!</p>
-            </div>
-            <div class="lang-es hidden">
-                <h2>Nuestra Celebración</h2>
-                <p>Acompáñanos en una celebración mágica frente al mar en Jardín del Mar en Cancún. Intercambiaremos
-                    nuestros votos mientras el sol se pone sobre el Caribe, seguido de cócteles, cena con música de
-                    saxofón
-                    en vivo y baile bajo las estrellas.</p>
-                <p>¡La noche culminará con mariachis y tacos a las 2am - una verdadera fiesta mexicana!</p>
-            </div>
-        </div>
-        <!-- <div class="floral-divider floral-alt"></div> -->
-        <div class="pair-right" style="display:flex; justify-content:center; flex:1">
-            <img src="./assets/cancun-destination.png" style="width:100%; max-width:800px;" />
-        </div>
+    <section class="details" id="location">
 
+        <!-- <div class="leaf-decoration top-left"></div>
+        <div class="leaf-decoration top-right"></div> -->
+        <div class="pair">
+            <div class="pair-left text-backdrop">
+                <div class="lang-en">
+                    <h2>Our Celebration</h2>
+                    <p>Join us for a magical beachfront celebration at Jardin del Mar in Cancún. We'll exchange vows as
+                        the
+                        sun
+                        sets over the Caribbean, followed by cocktails, dinner with live saxophone music, and dancing
+                        under
+                        the
+                        stars.</p>
+                    <p>The evening will culminate with mariachis and tacos at 2am - a true Mexican fiesta!</p>
+                </div>
+                <div class="lang-es hidden">
+                    <h2>Nuestra Celebración</h2>
+                    <p>Acompáñanos en una celebración mágica frente al mar en Jardín del Mar en Cancún. Intercambiaremos
+                        nuestros votos mientras el sol se pone sobre el Caribe, seguido de cócteles, cena con música de
+                        saxofón
+                        en vivo y baile bajo las estrellas.</p>
+                    <p>¡La noche culminará con mariachis y tacos a las 2am - una verdadera fiesta mexicana!</p>
+                </div>
+            </div>
+            <!-- <div class="floral-divider floral-alt"></div> -->
+            <div class="pair-right">
+                <!-- background-img" style="background-image:url('./assets/cancun-destination.png');"> -->
+                <img src="./assets/cancun-destination.png" style="width:100%; height:100%; max-width:800px;" />
+            </div>
+        </div>
     </section>
+
+    <div class="leaf-divider alt"></div>
+
     <!-- Location & Accommodation Section -->
     <section class="location" id="location">
-        <div class="lang-en">
-            <h2>Ceremony &amp; Accommodations</h2>
-            <h3>Jardin del Mar</h3>
-            <p>Blvd. Kukulcan Km 13.5, Zona Hotelera<br />Cancún, Quintana Roo 77500, Mexico</p>
-            <a class="map-link" href="https://www.jardindelmar.com.mx/locación?lang=en" target="_blank">Visit Jardin del
-                Mar Website →</a>
-            <div class="map-container">
-                <iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2380643.159976702!2d-87.2372621!3d20.9470756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f3!3m3!1m2!1s0x8f4e86bdd8a05967%3A0x194721cc2728ea1b!2sJard%C3%ADn%20del%20Mar!5e0!3m2!1sen!2sus!16s%2Fg%2F11c75m3fl3&amp;markers=color:red%7C20.9470756,-87.2372621&amp;zoom=15"
-                    style="border:0;" width="100%">
-                </iframe>
+        <div class="map-container">
+            <iframe allowfullscreen="" height="200px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2380643.159976702!2d-87.2372621!3d20.9470756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f3!3m3!1m2!1s0x8f4e86bdd8a05967%3A0x194721cc2728ea1b!2sJard%C3%ADn%20del%20Mar!5e0!3m2!1sen!2sus!16s%2Fg%2F11c75m3fl3&amp;markers=color:red%7C20.9470756,-87.2372621&amp;zoom=15"
+                style="border: 0;" width="100%">
+            </iframe>
+        </div>
+        <div class="pair">
+            <div class="pair-left text-backdrop" style="border-radius: 0px;">
+                <div class="lang-en">
+                    <!-- <div class="rounded"> -->
+                    <h2>Ceremony &amp; Accommodations</h2>
+                    <h3>Jardin del Mar</h3>
+                    <p>Blvd. Kukulcan Km 13.5, Zona Hotelera<br />Cancún, Quintana Roo 77500, Mexico</p>
+                    <a class="map-link" href="https://www.jardindelmar.com.mx/locación?lang=en" target="_blank">Visit
+                        Jardin del
+                        Mar Website →</a>
+                    <!-- </div> -->
+                </div>
+                <div class="lang-es hidden"> <!-- Spanish version of location section -->
+                    <h2>Ceremonia y Hospedaje</h2>
+                    <h3>Jardín del Mar</h3>
+                    <p>Blvd. Kukulcán Km 13.5, Zona Hotelera<br />Cancún, Quintana Roo 77500, México</p>
+                    <a class="map-link" href="https://www.jardindelmar.com.mx/locación?lang=es" target="_blank">Visita
+                        el
+                        sitio web de Jardín del Mar →</a>
+                </div>
             </div>
+            <div class="pair-right">
+                <img src="./assets/beach-wedding-placeholder.png" />
+            </div>
+        </div>
+        <div class="lang-en">
             <div class="hotel-info">
                 <h3>Guest Accommodations</h3>
                 <p><strong>Emporio Cancún</strong><br />
@@ -195,7 +231,8 @@
                 <div class="transport-options">
                     <div class="transport-card">
                         <h4><i class="fas fa-taxi"></i> Taxi</h4>
-                        <p>Official airport taxis cost approximately $50 USD for up to 4 passengers. Travel time: ~30
+                        <p>Official airport taxis cost approximately $50 USD for up to 4 passengers. Travel time:
+                            ~30
                             minutes.</p>
                     </div>
                     <div class="transport-card">
@@ -204,7 +241,8 @@
                     </div>
                     <div class="transport-card">
                         <h4><i class="fas fa-car"></i> Rental Car</h4>
-                        <p>Major rental agencies available at airport. Parking available at hotel for $15 USD/day.</p>
+                        <p>Major rental agencies available at airport. Parking available at hotel for $15 USD/day.
+                        </p>
                     </div>
                 </div>
                 <!-- Nearby Options -->
@@ -231,18 +269,6 @@
             </div>
         </div>
         <div class="lang-es hidden">
-            <!-- Spanish version of location section -->
-            <h2>Ceremonia y Hospedaje</h2>
-            <h3>Jardín del Mar</h3>
-            <p>Blvd. Kukulcán Km 13.5, Zona Hotelera<br />Cancún, Quintana Roo 77500, México</p>
-            <a class="map-link" href="https://www.jardindelmar.com.mx/locación?lang=es" target="_blank">Visita el sitio
-                web de Jardín del Mar →</a>
-            <div class="map-container">
-                <iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2380643.159976702!2d-87.2372621!3d20.9470756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f3!3m3!1m2!1s0x8f4e86bdd8a05967%3A0x194721cc2728ea1b!2sJard%C3%ADn%20del%20Mar!5e0!3m2!1sen!2sus!16s%2Fg%2F11c75m3fl3&amp;markers=color:red%7C20.9470756,-87.2372621&amp;zoom=15"
-                    style="border:0;" width="100%">
-                </iframe>
-            </div>
             <div class="hotel-info">
                 <h3>Alojamiento para Invitados</h3>
                 <p><strong>Emporio Cancún</strong><br />
@@ -259,11 +285,13 @@
                     </div>
                     <div class="transport-card">
                         <h4><i class="fas fa-shuttle-van"></i> Transporte del Hotel</h4>
-                        <p>Emporio ofrece traslados privados por $65 USD por trayecto (reserva previa requerida).</p>
+                        <p>Emporio ofrece traslados privados por $65 USD por trayecto (reserva previa requerida).
+                        </p>
                     </div>
                     <div class="transport-card">
                         <h4><i class="fas fa-car"></i> Renta de Auto</h4>
-                        <p>Agencias de renta disponibles en el aeropuerto. El hotel cuenta con estacionamiento por $15
+                        <p>Agencias de renta disponibles en el aeropuerto. El hotel cuenta con estacionamiento por
+                            $15
                             USD al día.</p>
                     </div>
                 </div>
@@ -291,6 +319,7 @@
             </div>
         </div>
     </section>
+    <div class="leaf-divider"></div>
     <!-- Timeline Section -->
     <section id="timeline">
         <!-- English Timeline -->
@@ -402,6 +431,7 @@
             </div>
         </div>
     </section>
+    <div class="leaf-divider alt"></div>
     <!-- Existing timeline content -->
     <section class="activities" id="activities">
         <div class="lang-en">
@@ -501,6 +531,7 @@
         </div>
         </div>
     </section>
+    <div class="leaf-divider"></div>
     <!-- FAQ Section -->
     <section class="faq-section" id="faq">
         <div class="lang-en">
@@ -559,12 +590,13 @@
             </div>
         </div>
     </section>
+    <div class="leaf-divider alt"></div>
     <!-- RSVP Section -->
     <div class="rsvp-container" id="rsvp">
         <a class="rsvp-btn lang-en" href="https://withjoy.com/bety-and-lucas/rsvp">RSVP Now</a>
         <a class="rsvp-btn lang-es hidden" href="https://withjoy.com/bety-and-lucas/rsvp">Confirmar Asistencia</a>
     </div>
-
+    <div class="leaf-divider"></div>
     <section class="details" style="margin-bottom:1rem;">
         <div class="lang-en">
             <h2 style="text-align:center;">Wedding Week!</h2>
@@ -596,7 +628,7 @@
         </div>
 
     </section>
-
+    <div class="leaf-divider alt"></div>
     <footer>
         <div class="lang-en">
             <p>We can't wait to celebrate with you!</p>
@@ -647,7 +679,7 @@
     </script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const sections = ['header', 'location', 'timeline', 'activities', 'faq', 'rsvp'];
+            const sections = ['header', 'about', 'location', 'timeline', 'activities', 'faq', 'rsvp'];
             const navLinks = {};
 
             sections.forEach(id => {
