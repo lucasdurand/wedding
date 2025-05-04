@@ -130,6 +130,17 @@ section {
     background: var(--color3);
 }
 
+.timeline::after {
+    content: "▼";
+    position: absolute;
+    left: 15.5px;
+    bottom: -2rem;
+    /* transform: translateX(-50%); */
+    font-size: 2rem;
+    color: var(--color3);
+    padding: 0px;
+}
+
 .timeline-day {
     font-size: 1.8rem;
     color: var(--color3);
@@ -137,19 +148,6 @@ section {
     position: relative;
     padding-left: 30px;
 }
-
-/* .timeline-day::before {
-    content: "";
-    position: absolute;
-    left: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: var(--color3);
-    border: 5px solid var(--color1);
-} */
 
 .timeline-item {
     display: grid;
