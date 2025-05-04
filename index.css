@@ -214,7 +214,7 @@ section {
 }
 
 .map-card {
-    grid-row: span 2;
+    grid-row: span 3;
     overflow: hidden;
     padding: 0px;
     /* flush with the card edge */
