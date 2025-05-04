@@ -6,7 +6,7 @@
 }
 
 .language-btn {
-    background: var(--color3);
+    background-color: var(--color3);  /* Terracotta */
     color: white;
     border: none;
     padding: 8px 15px;
@@ -19,10 +19,24 @@
 }
 
 .language-btn:hover {
-    background: var(--color5);
-    transform: translateY(-2px);
+    background-color: var(--color2);  /* Peach highlight */
+    color: var(--color5);             /* Charcoal text */
 }
 
 .hidden {
     display: none !important;
+}
+
+.pair-left {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius:1rem;
+}
+
+.pair-right {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.pair-right img {
+    border-radius: inherit;
 }
