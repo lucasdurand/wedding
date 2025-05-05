@@ -18,17 +18,30 @@ body {
 body{
     background-image: url('assets/leaves/floral-background.png');
 }
-
+      
 header {
-    background: linear-gradient(rgba(106, 108, 87, 0.5), rgba(106, 108, 87, 0.5)),
-        url('assets/photos/hands-ring.jpg') center/cover;
+    background-color: transparent;
+    background-image:
+        linear-gradient(to right, #758f96 0%, #758f9600 30%, #758f9600 70%, #758f96 100%), /* burst of background color to fix the abrupt hand stop */
+        linear-gradient(rgba(106, 108, 87, 0.5), rgba(106, 108, 87, 0.5)),
+        url('assets/photos/hands-ring-cropped.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
-
     padding: 180px 20px;
     position: relative;
 }
 
+@media (min-width: 1400px) {
+    header {
+      background-size: 1400px; /* limit size on big screens */
+      background-repeat: no-repeat;
+      max-height: 800px; /* optional: prevent it from growing too tall */
+      background-color:#748e95; /* bottom edge fallback */
+  }
+}
 h1 {
     font-family: "Sacramento", cursive;
 }
