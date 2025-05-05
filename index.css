@@ -17,16 +17,13 @@ body {
 }
 
 body{
-    background-image: url('assets/leaves/floral-background.png');
+    background-image: url('./assets/leaves/floral-background.png');
 }
       
 header {
-    background-color: transparent;
     background-image:
-        /* radial-gradient(to right, var(--header-bg) 0%, #758f9600 20%, #fff 50%, #758f9600 80%, var(--header-bg) 100%), */
-        /* radial-gradient(circle at center, rgba(0, 0, 0, 0.2) 0%, rgba(109, 125, 141, 0.95) 70%, var(--header-bg) 89%), */
         linear-gradient(rgba(106, 108, 87, 0.5), rgba(106, 108, 87, 0.5)),
-        url('assets/photos/hands-ring-cropped.jpg');
+        url('./assets/photos/hands-ring-cropped.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -38,13 +35,12 @@ header {
 
 @media (min-width: 1400px) {
     header {
-      background-image:
-        radial-gradient(circle at center, rgba(106, 108, 87, 0.5) 0%, rgba(106, 108, 87, 0.5) 70%, #748e95 87%),
-        url('assets/photos/hands-ring-cropped.jpg');
-      background-size: 1400px; /* limit size on big screens */
-      background-repeat: no-repeat;
-      max-height: 800px; /* optional: prevent it from growing too tall */
-      background-color:#748e95; /* bottom edge fallback */
+        background-image:
+            radial-gradient(circle at center, rgba(106, 108, 87, 0.5) 0%, rgba(106, 108, 87, 0.5) 70%, #748e95 87%),
+            url('./assets/photos/hands-ring-cropped.jpg');
+        background-color:#748e95; /* bottom edge fallback */
+        background-size: 1400px; /* limit size on big screens */
+        max-height: 800px; /* optional: prevent it from growing too tall */
   }
 }
 h1 {
