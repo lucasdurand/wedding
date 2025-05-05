@@ -49,9 +49,9 @@
 }
 
 .pair {
-    display: inline-flex;
+    display: flex;
     gap: 1rem;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 .text-backdrop {
