@@ -38,6 +38,7 @@
     border-bottom-left-radius:1rem;
     flex: 1;
     flex-basis: 250px;
+    box-sizing: border-box;
 }
 
 .pair-right {
@@ -45,6 +46,7 @@
     border-bottom-right-radius: 1rem;
     flex: 1;
     flex-basis: 250px;
+    box-sizing: border-box;
 }
 
 .pair-right img,iframe {
