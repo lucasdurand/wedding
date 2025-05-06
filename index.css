@@ -133,80 +133,56 @@ section {
     background: var(--color1);
 }
 
-.timeline::before {
+
+.timeline-elegant {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .timeline-elegant::before {
     content: "";
     position: absolute;
-    left: 30px;
     top: 0;
-    bottom: 0;
-    width: 3px;
-    background: var(--timeline-color);
-}
-
-.timeline::after {
-    content: "▼";
-    position: absolute;
-    left: 15.5px;
-    bottom: -2rem;
-    /* transform: translateX(-50%); */
-    font-size: 2rem;
-    color: var(--timeline-color);
-    padding: 0px;
-}
-
-.timeline-day {
-    font-size: 1.8rem;
-    color: var(--color3);
-    margin: 50px 0 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 100%;
+    background: var(--color4);
+  }
+  
+  .timeline-event {
     position: relative;
-    padding-left: 30px;
-}
-
-.timeline-day:first-child::before {
-    content: '▲';
-    position: absolute;
-    top: -2rem;
-    left: -33.5px;
-    bottom: -2rem;
-    /* transform: translateX(-50%); */
-    font-size: 2rem;
-    color: var(--timeline-color);
-    padding: 0px;
-}
-.timeline-item {
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    gap: 30px;
-    margin: 30px 0;
-    position: relative;
-    padding-left: 30px;
-}
-
-.timeline-item::before {
-    content: "";
-    position: absolute;
-    left: -33.5px;
-    top: 10px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: var(--timeline-color);
-    border: 5px solid var(--color1);
-}
-
-.timeline-time {
-    font-weight: bold;
-    color: var(--color3);
+    width: 50%;
+    padding: 1.5rem 2rem;
+    box-sizing: border-box;
+  }
+  
+  .timeline-event.left {
+    left: 0;
     text-align: right;
-}
-
-.timeline-info {
-    background: white;
-    padding: 20px;
+  }
+  
+  .timeline-event.right {
+    left: 50%;
+    text-align: left;
+  }
+  
+  .timeline-event .time {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    color: var(--color3);
+  }
+  
+  .timeline-event .info {
+    background: #fdfcf9;
     border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-    position: relative;
-}
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 15%)
+  }
+  
 
 .hotel-info {
     background: white;
@@ -489,33 +465,9 @@ footer {
         font-size: 1.4rem;
     }
 
-    .timeline {
-        padding-left: 30px;
-    }
-
     section h2 {
         text-align: center;
     }
-
-
-    .timeline-item {
-        grid-template-columns: 1fr;
-        padding-left: 0;
-    }
-
-    .timeline-item::before {
-        left: -13.5px;
-    }
-
-    .timeline-day:first-child::before {
-        left: -13.5px;
-    }
-    
-
-    .timeline-info {
-        margin-left: 1rem;
-    }
-
 
     .activity-card {
         flex-direction: column;
