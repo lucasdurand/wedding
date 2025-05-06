@@ -66,3 +66,54 @@
 .rounded {
     border-radius: 1rem;
 }
+
+
+.timeline-elegant {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .timeline-elegant::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 100%;
+    background: var(--color4);
+  }
+  
+  .timeline-event {
+    position: relative;
+    width: 50%;
+    padding: 1.5rem 2rem;
+    box-sizing: border-box;
+  }
+  
+  .timeline-event.left {
+    left: 0;
+    text-align: right;
+  }
+  
+  .timeline-event.right {
+    left: 50%;
+    text-align: left;
+  }
+  
+  .timeline-event .time {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    color: var(--color3);
+  }
+  
+  .timeline-event .info {
+    background: #fdfcf9;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 15%)
+  }
+  
