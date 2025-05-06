@@ -24,12 +24,12 @@
 .leaf-divider {
   /* background-image: url('assets/leaves/frond-up.png'); */
   /* background-color: #ffffffe3; */
-  height: 10rem;
-  /* height: 5rem; */
+  /* height: 10rem; */
+  height: 5rem;
   background-image: none !important;
   background-color: none;
 
-  margin-top: 2rem; 
+  /* margin-top: 2rem;  */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
