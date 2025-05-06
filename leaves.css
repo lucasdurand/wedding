@@ -1,0 +1,68 @@
+.leaf-decoration {
+  position: absolute;
+  z-index: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 180px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.leaf-decoration.top-left {
+  top: -3rem;
+  left: -3rem;
+  background-image: url('assets/leaves/leaf-top-left.png');
+}
+
+.leaf-decoration.top-right {
+  top: -3rem;
+  right: -3rem;
+  background-image: url('assets/leaves/leaf-top-right.png');
+}
+
+.leaf-divider {
+  /* background-image: url('assets/leaves/frond-up.png'); */
+  /* background-color: #ffffffe3; */
+  /* height: 10rem; */
+  height: 5rem;
+  background-image: none !important;
+  background-color: none;
+
+  /* margin-top: 2rem;  */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.leaf-divider.alt {
+  background-image: url('assets/leaves/leaf-vertical.png');
+}
+
+.leaf-divider.repeat {
+  background-repeat: repeat-x;
+}
+
+.floral-divider {
+    width: 100%;
+    height: 45px;
+    margin: 40px auto;
+    background-image: url('./assets/flowers/flowers_top.png');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.floral-alt {
+    background-image: url('./assets/flowers/flowers_bottom.png')
+}
+
+.background-right {  background-image: url('assets/leaves/leaf-wallpaper.png'); /* your image here */
+    background-repeat: repeat-y;
+    background-position: right top;
+    background-size: 300px auto;        /* control image size */
+    background-attachment: scroll;
+    background-origin: border-box;
+    background-clip: border-box;
+    background-spacing: 0 400px;        /* use this if using background shorthand (see alt below) */
+}
