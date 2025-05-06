@@ -1,8 +1,14 @@
 .language-toggle {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
     z-index: 100;
+}
+
+@media(min-width:1000px) {
+    .language-toggle {
+        position: fixed;
+    }
 }
 
 .language-btn {
