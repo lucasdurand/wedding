@@ -25,19 +25,18 @@
   margin-bottom: 2rem;
 }
 
-.timeline-event.left {
+.timeline-event:nth-child(odd) {
   justify-content: flex-end;
   flex-direction: row-reverse;
   left: 0;
   text-align: right;
 }
 
-.timeline-event.right {
+.timeline-event:nth-child(even) {
   justify-content: flex-start;
   left: 50%;
   text-align: left;
 }
-
 
 @media (max-width: 700px) {
     .timeline-event.right {
