@@ -38,6 +38,14 @@
   text-align: left;
 }
 
+
+@media (max-width: 700px) {
+    .timeline-event.right {
+        justify-content: end;
+    }
+}
+
+
 .timeline-event .icon {
   font-size: 3rem;
   margin: 0 1rem;
@@ -52,6 +60,7 @@
   box-shadow: 0 1px 3px rgba(0,0,0,0.25);
   flex: 1;
   max-width: 280px;
+  min-width: 175px;
   z-index: 1;
 }
 
