@@ -133,6 +133,8 @@
     width: 100%;
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: 8px;
+    border-top-left-radius: 50% 35%;
+    border-top-right-radius: 50% 35%;
 }
 
 h2 {
