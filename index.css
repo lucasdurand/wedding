@@ -162,7 +162,7 @@ section {
 }
 
 .map-card {
-    grid-row: span 3;
+    grid-row: span 2;
     overflow: hidden;
     padding: 0px;
     /* flush with the card edge */
@@ -209,6 +209,12 @@ section {
     text-align: center;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn {
+    background: var(--color2);
+    padding:1rem;
+    display:table;
 }
 
 .rsvp-btn:hover {
