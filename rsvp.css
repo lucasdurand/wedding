@@ -26,7 +26,9 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, var(--dark), var(--secondary));
+    /* background: linear-gradient(45deg, var(--dark), var(--secondary)); */
+    background-image: url('assets/invitation/green-texture.jpg');
+    background-size: 200%;
     border-radius: 4px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transition: transform 0.5s;
@@ -49,7 +51,9 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(160deg, var(--primary) 40%, var(--dark) 90%);
+    /* background: linear-gradient(160deg, var(--primary) 40%, var(--dark) 90%); */
+    background-image: url('assets/invitation/green-texture.jpg');
+    background-size: cover;
     backface-visibility: hidden;
     border-radius: 4px 4px 0 0;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
@@ -64,9 +68,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background:
+    /* background:
         radial-gradient(circle at center, transparent 60%, rgba(255, 255, 255, 0.3) 60.5%, transparent 61%) 50% 30% / 100% 100%,
-        linear-gradient(45deg, var(--primary), black);
+        linear-gradient(45deg, var(--primary), black); */
+    background-image: url('assets/invitation/green-texture.jpg');
+    background-size: cover;
     backface-visibility: hidden;
     border-radius: 4px 4px 0 0;
     transform: rotateX(180deg);
@@ -132,7 +138,13 @@
 .invitation img {
     width: 100%;
     border-bottom-left-radius: inherit;
-    border-bottom-right-radius: 8px;
+    border-bottom-right-radius: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+
+}
+
+.round-top {    
     border-top-left-radius: 50% 35%;
     border-top-right-radius: 50% 35%;
 }
