@@ -146,8 +146,8 @@
 }
 
 .round-top {    
-    border-top-left-radius: 50% 35%;
-    border-top-right-radius: 50% 35%;
+    border-top-left-radius: 50% 35% !important;
+    border-top-right-radius: 50% 35% !important;
 }
 
 h2 {
