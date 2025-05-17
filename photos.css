@@ -21,3 +21,13 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
+
+.hr {
+    height: 0.5rem;
+    background-size: 13rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    /* width: 90%; */
+    background-color: var(--color4);
+}
