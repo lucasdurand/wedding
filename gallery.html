@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fancybox Gallery Example</title>
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <style>
+        .gallery img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Fancybox Gallery</h1>
+
+    <div class="gallery">
+        <a data-fancybox="gallery" href="./assets/photos/bety-doctor.jpg">
+            <img src="./assets/photos/bety-doctor.jpg" alt="Image 1">
+        </a>
+        <a href="./assets/photos/embracing-sunglasses.jpg" data-fancybox="gallery" data-caption="Single image">
+            <img src="./assets/photos/embracing-sunglasses.jpg" />
+        </a>
+        <a href="./assets/photos/kissing-bw.jpg" data-fancybox="gallery" data-caption="Single image">
+            <img src="./assets/photos/kissing-bw.jpg" />
+        </a>
+    </div>
+
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+</body>
+
+</html>
