@@ -69,6 +69,27 @@ h1 {
     font-weight: 300;
 }
 
+.announcement {
+    position: fixed; 
+    top: 10%; left: 50%; 
+    transform: translateX(-50%); 
+    background: white; 
+    border: 2px solid #ccc; 
+    border-radius: 8px; 
+    padding: 1.5em; 
+    max-width: 90%; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+    z-index: 1000;
+}
+
+.announcement .dismiss{
+    float: right; 
+    background: none;
+    border: none; 
+    font-size: 1.2em; 
+    cursor: pointer;
+}
+
 section {
     padding: 1rem;
     max-width: 1000px;
