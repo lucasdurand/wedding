@@ -6,6 +6,18 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Lucas &amp; Beatriz</title>
+
+    <!-- Favicons  -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Fonts & Icons -->
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Montserrat:wght@300;400&amp;display=swap"
         rel="stylesheet" />
@@ -13,12 +25,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+    <!-- My Styles -->
+
     <link href="./common.css" rel="stylesheet" />
     <link href="./index.css" rel="stylesheet" />
     <link href="./leaves.css" rel="stylesheet" />
     <link href="./timeline.css" rel="stylesheet" />
     <link href="./photos.css" rel="stylesheet" />
     <script src="./common.js"></script>
+
+    <!-- Dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
@@ -554,7 +571,7 @@
                     <div class="icon">🧘‍♀️</div>
                     <div class="content">
                         <div class="time">Viernes</div>
-                        <div class="info">Día libre para descansar o <a href="#activites">explorar</a><br><small>¡Pero
+                        <div class="info">Día libre para descansar o <a href="#activities">explorar</a><br><small>¡Pero
                                 no se excedan! El sábado
                                 se baila fuerte.</small></div>
                     </div>
@@ -910,14 +927,13 @@
     <div class="leaf-divider alt"></div>
     <!-- RSVP Section -->
     <div class="rsvp-container" id="rsvp">
-        <section class="location lang-en" style="font-size:xx-large;">👇 Action
-            Items 👇
+        <section class="location lang-en" style="font-size:clamp(1rem, 5vw, 2rem);">👇 Action Items 👇
         </section>
-        <section class="location lang-es" style="font-size:xx-large;">👇 Acciones a realizar 👇
+        <section class="location lang-es" style="font-size:clamp(1rem, 5vw, 2rem);">👇 Acciones a realizar 👇
         </section>
 
-        <a class="rsvp-btn lang-en" href="https://withjoy.com/bety-and-lucas/rsvp"><i
-                class="fa-solid fa-calendar-plus"></i> RSVP Now <i class="fa-solid fa-calendar-check"></i></a>
+        <a class=" rsvp-btn lang-en" href="https://withjoy.com/bety-and-lucas/rsvp"><i
+                class="fa-solid fa-calendar-plus"></i> RSVP Now</a>
         <div class="rsvp-block lang-en">
             <add-to-calendar-button name="Bety + Lucas Get Married" startDate="2026-03-04" endDate="2026-03-07"
                 timeZone="America/Cancun" location="Cancun, Mexico"
@@ -925,8 +941,9 @@
                 availability="busy" subscribe options="'Apple','Google','iCal','Outlook.com','Yahoo'" buttonStyle="date"
                 hideIconModal size="4" language="en"></add-to-calendar-button>
         </div>
-        <a class="rsvp-btn back-btn lang-en" href="/rsvp">back to invite</a>
-        <a class="rsvp-btn lang-es hidden" href="https://withjoy.com/bety-and-lucas/rsvp">Confirmar Asistencia</a>
+        <a class="rsvp-btn back-btn lang-en" id="back-to-invite-en" href="/rsvp">back to invite</a>
+        <a class="rsvp-btn lang-es hidden" href="https://withjoy.com/bety-and-lucas/rsvp"><i
+                class="fa-solid fa-calendar-plus"></i> Confirmar Asistencia</a>
 
         <div class="rsvp-block lang-es">
             <add-to-calendar-button name="Bety y Lucas: la boda!" startDate="2026-03-04" endDate="2026-03-07"
@@ -935,9 +952,7 @@
                 availability="busy" subscribe options="'Apple','Google','iCal','Outlook.com','Yahoo'" buttonStyle="date"
                 hideIconModal size="4" language="es"></add-to-calendar-button>
         </div>
-
-
-        <a class="rsvp-btn back-btn lang-es" href="/rsvp">volver a la invitación</a>
+        <a class="rsvp-btn back-btn lang-es" id="back-to-invite-es" href="/rsvp">volver a la invitación</a>
     </div>
     <div class="leaf-divider"></div>
     <section class="location" id="registry">
@@ -1083,5 +1098,9 @@
         });
     </script>
 </body>
+<script>
+    passthroughParamsToLink('back-to-invite-en'); /* Keep English/Spanish choice for rsvp */
+    passthroughParamsToLink('back-to-invite-es'); /* Keep English/Spanish choice for rsvp */
+</script>
 
 </html>
