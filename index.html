@@ -19,6 +19,7 @@
     <link href="./timeline.css" rel="stylesheet" />
     <link href="./photos.css" rel="stylesheet" />
     <script src="./common.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 </head>
@@ -403,12 +404,21 @@
         <!-- English Timeline -->
         <div class="lang-en">
             <h2 class="timeline-header">Wedding Weekend Schedule</h2>
+            <div class="timeline-bookend lang-en">
+                <add-to-calendar-button name="Bety + Lucas Get Married" startDate="2026-03-04" endDate="2026-03-07"
+                    timeZone="America/Cancun" location="Cancun, Mexico"
+                    icsFile="https://calendar.google.com/calendar/ical/d7247e5844f86f17d80cb5fcbd86635beaf14e685ca690f9134023203dcdddad%40group.calendar.google.com/public/basic.ics"
+                    availability="busy" subscribe iCalFileName="Test"
+                    options="'Apple','Google','iCal','Outlook.com','Yahoo'" buttonStyle="round" hideIconModal size="4"
+                    language="en"></add-to-calendar-button>
+            </div>
             <div class="timeline-elegant">
                 <div class="timeline-event">
                     <div class="icon">👨‍👩‍👧‍👦</div>
                     <div class="content">
                         <div class="time">Wednesday</div>
-                        <div class="info">Family arrives and settles in to Emporio Cancún<br><small>If you're in town
+                        <div class="info">Family arrives and settles in to Emporio Cancún<br><small>If you're in
+                                town
                                 early, we'd love to
                                 see you — but Wednesday is for family.</small></div>
                     </div>
@@ -418,7 +428,8 @@
                     <div class="icon">🍹</div>
                     <div class="content">
                         <div class="time">Thursday (Sunset)</div>
-                        <div class="info">Icebreaker at the hotel: drinks, canapés, and mingling for all guests!</div>
+                        <div class="info">Icebreaker at the hotel: drinks, canapés, and mingling for all guests!
+                        </div>
                     </div>
                 </div>
 
@@ -497,17 +508,36 @@
                     </div>
                 </div>
             </div>
+            <div class="timeline-bookend lang-en">
+                <add-to-calendar-button name="Bety + Lucas Get Married" startDate="2026-03-04" endDate="2026-03-07"
+                    timeZone="America/Cancun" location="Cancun, Mexico"
+                    icsFile="https://calendar.google.com/calendar/ical/d7247e5844f86f17d80cb5fcbd86635beaf14e685ca690f9134023203dcdddad%40group.calendar.google.com/public/basic.ics"
+                    availability="busy" subscribe iCalFileName="Test"
+                    options="'Apple','Google','iCal','Outlook.com','Yahoo'" buttonStyle="round" hideIconModal size="4"
+                    language="en"></add-to-calendar-button>
+            </div>
+
         </div>
 
         <!-- Spanish Timeline -->
         <div class="lang-es hidden">
             <h2 class="timeline-header">Programa del Fin de Semana</h2>
+            <div class="timeline-bookend lang-es">
+                <add-to-calendar-button name="Bety y Lucas: la boda!" startDate="2026-03-04" endDate="2026-03-07"
+                    timeZone="America/Cancun" location="Cancun, Mexico"
+                    icsFile="https://calendar.google.com/calendar/ical/d7247e5844f86f17d80cb5fcbd86635beaf14e685ca690f9134023203dcdddad%40group.calendar.google.com/public/basic.ics"
+                    availability="busy" subscribe iCalFileName="Test"
+                    options="'Apple','Google','iCal','Outlook.com','Yahoo'" buttonStyle="round" hideIconModal size="4"
+                    language="es"></add-to-calendar-button>
+            </div>
+
             <div class="timeline-elegant">
                 <div class="timeline-event">
                     <div class="icon">👨‍👩‍👧‍👦</div>
                     <div class="content">
                         <div class="time">Miércoles</div>
-                        <div class="info">La familia llega y se instala<br><small>Si ya estás en Cancún, ¡nos encantaría
+                        <div class="info">La familia llega y se instala<br><small>Si ya estás en Cancún, ¡nos
+                                encantaría
                                 verte! Pero este día es exclusivo para la familia.</small></div>
                     </div>
                 </div>
@@ -594,6 +624,15 @@
                     </div>
                 </div>
             </div>
+            <div class="timeline-bookend lang-es">
+                <add-to-calendar-button name="Bety y Lucas: la boda!" startDate="2026-03-04" endDate="2026-03-07"
+                    timeZone="America/Cancun" location="Cancun, Mexico"
+                    icsFile="https://calendar.google.com/calendar/ical/d7247e5844f86f17d80cb5fcbd86635beaf14e685ca690f9134023203dcdddad%40group.calendar.google.com/public/basic.ics"
+                    availability="busy" subscribe iCalFileName="Test"
+                    options="'Apple','Google','iCal','Outlook.com','Yahoo'" buttonStyle="round" hideIconModal size="4"
+                    language="es"></add-to-calendar-button>
+            </div>
+
         </div>
 
     </section>
@@ -871,9 +910,33 @@
     <div class="leaf-divider alt"></div>
     <!-- RSVP Section -->
     <div class="rsvp-container" id="rsvp">
-        <a class="rsvp-btn lang-en" href="https://withjoy.com/bety-and-lucas/rsvp">RSVP Now</a>
+        <section class="location lang-en" style="font-size:xx-large;">👇 Action
+            Items 👇
+        </section>
+        <section class="location lang-es" style="font-size:xx-large;">👇 Acciones a realizar 👇
+        </section>
+
+        <a class="rsvp-btn lang-en" href="https://withjoy.com/bety-and-lucas/rsvp"><i
+                class="fa-solid fa-calendar-plus"></i> RSVP Now <i class="fa-solid fa-calendar-check"></i></a>
+        <div class="rsvp-block lang-en">
+            <add-to-calendar-button name="Bety + Lucas Get Married" startDate="2026-03-04" endDate="2026-03-07"
+                timeZone="America/Cancun" location="Cancun, Mexico"
+                icsFile="https://calendar.google.com/calendar/ical/d7247e5844f86f17d80cb5fcbd86635beaf14e685ca690f9134023203dcdddad%40group.calendar.google.com/public/basic.ics"
+                availability="busy" subscribe options="'Apple','Google','iCal','Outlook.com','Yahoo'" buttonStyle="date"
+                hideIconModal size="4" language="en"></add-to-calendar-button>
+        </div>
         <a class="rsvp-btn back-btn lang-en" href="/rsvp">back to invite</a>
         <a class="rsvp-btn lang-es hidden" href="https://withjoy.com/bety-and-lucas/rsvp">Confirmar Asistencia</a>
+
+        <div class="rsvp-block lang-es">
+            <add-to-calendar-button name="Bety y Lucas: la boda!" startDate="2026-03-04" endDate="2026-03-07"
+                timeZone="America/Cancun" location="Cancun, Mexico"
+                icsFile="https://calendar.google.com/calendar/ical/d7247e5844f86f17d80cb5fcbd86635beaf14e685ca690f9134023203dcdddad%40group.calendar.google.com/public/basic.ics"
+                availability="busy" subscribe options="'Apple','Google','iCal','Outlook.com','Yahoo'" buttonStyle="date"
+                hideIconModal size="4" language="es"></add-to-calendar-button>
+        </div>
+
+
         <a class="rsvp-btn back-btn lang-es" href="/rsvp">volver a la invitación</a>
     </div>
     <div class="leaf-divider"></div>
