@@ -77,6 +77,11 @@ section {
     border-radius:1rem;
 }
 
+.timeline-bookend {
+    display:table;
+    margin:auto;
+}
+
 .sacramento-regular {
     font-family: "Sacramento", cursive;
     font-weight: 400;
