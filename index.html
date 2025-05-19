@@ -19,6 +19,7 @@
     <link href="./timeline.css" rel="stylesheet" />
     <link href="./photos.css" rel="stylesheet" />
     <script src="./common.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 </head>
@@ -400,89 +401,23 @@
     <div class="leaf-divider"></div>
     <!-- Timeline Section -->
     <section id="timeline">
-        <!-- Add to Calendar Button with Icon -->
-        <!-- TODO: This should center on smaller screens -->
-        <button id="addToCalendarBtn"
-            style="font-size: 1rem; float:right; padding: 1rem 2rem; border: none; border-radius: 8px; background-color: var(--color4); color: white; cursor: pointer;">
-            <i class="fa-solid fa-calendar-plus"></i>
-            <div class="lang-en">Subscribe to Calendar</div>
-            <div class="lang-es hidden">Agregar al Calendario</div>
-        </button>
-        <!-- Modal Structure -->
-        <div id="calendarModal"
-            style="display:none; z-index:100; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);">
-            <div style="background:white; max-width:500px; margin:10% auto; padding:20px; border-radius:8px;">
-                <h2 class="lang-en">Add to Calendar</h2>
-                <h2 class="lang-es">Agregar al Calendario</h2>
-
-                <!-- Apple Section -->
-                <h3 class="lang-en">Apple Calendar</h3>
-                <h3 class="lang-es">Calendario de Apple</h3>
-                <p class="lang-en">Click below to add directly to Apple Calendar.</p>
-                <p class="lang-es">Haz clic abajo para agregarlo directamente al Calendario de Apple.</p>
-                <a href="/gcal.ics" style="display:inline-block; margin-bottom:1rem;" class="lang-en">
-                    Add to Apple Calendar
-                </a>
-                <a href="/gcal.ics" style="display:inline-block; margin-bottom:1rem;" class="lang-es">
-                    Agregar al Calendario de Apple
-                </a>
-
-                <!-- Google Section -->
-                <h3 class="lang-en">Google Calendar</h3>
-                <h3 class="lang-es">Calendario de Google</h3>
-                <p class="lang-en">Follow these steps on a computer:</p>
-                <p class="lang-es">Sigue estos pasos en una computadora:</p>
-                <ol>
-                    <li class="lang-en">Open <a href="https://calendar.google.com" target="_blank">Google Calendar</a>
-                    </li>
-                    <li class="lang-es">Abre <a href="https://calendar.google.com" target="_blank">Google Calendar</a>
-                    </li>
-
-                    <li class="lang-en">Click “+” next to Other calendars</li>
-                    <li class="lang-es">Haz clic en “+” junto a Otros calendarios</li>
-
-                    <li class="lang-en">Select “From URL”</li>
-                    <li class="lang-es">Selecciona “Desde URL”</li>
-
-                    <li class="lang-en">Paste: <code>https://bety.lucasdurand.xyz/gcal.ics</code></li>
-                    <li class="lang-es">Pega: <code>https://bety.lucasdurand.xyz/gcal.ics</code></li>
-
-                    <li class="lang-en">Click Add Calendar</li>
-                    <li class="lang-es">Haz clic en Agregar calendario</li>
-                </ol>
-                <p class="lang-en">Events will appear in your Google Calendar and on your phone's calendar app.</p>
-                <p class="lang-es">Los eventos aparecerán en tu Google Calendar y en la app de calendario de tu
-                    teléfono.</p>
-
-                <!-- Close Button -->
-                <button id="closeModal"
-                    style="margin-top:1rem; padding:0.5rem 1rem; border:none; border-radius:5px; background:#ccc;"
-                    class="lang-en">
-                    Close
-                </button>
-                <button id="closeModal"
-                    style="margin-top:1rem; padding:0.5rem 1rem; border:none; border-radius:5px; background:#ccc;"
-                    class="lang-es">
-                    Cerrar
-                </button>
-            </div>
+        <div style="float:right;" class="lang-es">
+            <add-to-calendar-button name="Bety y Lucas: la boda!" startDate="2026-03-04" endDate="2026-03-07"
+                timeZone="America/Cancun" location="Cancun, Mexico"
+                icsFile="https://calendar.google.com/calendar/ical/d7247e5844f86f17d80cb5fcbd86635beaf14e685ca690f9134023203dcdddad%40group.calendar.google.com/public/basic.ics"
+                availability="busy" subscribe iCalFileName="Test"
+                options="'Apple','Google','iCal','Outlook.com','Yahoo'" buttonStyle="round" hideIconModal size="4"
+                language="es"></add-to-calendar-button>
+        </div>
+        <div style="float:right;" class="lang-en">
+            <add-to-calendar-button name="Bety + Lucas Get Married" startDate="2026-03-04" endDate="2026-03-07"
+                timeZone="America/Cancun" location="Cancun, Mexico"
+                icsFile="https://calendar.google.com/calendar/ical/d7247e5844f86f17d80cb5fcbd86635beaf14e685ca690f9134023203dcdddad%40group.calendar.google.com/public/basic.ics"
+                availability="busy" subscribe iCalFileName="Test"
+                options="'Apple','Google','iCal','Outlook.com','Yahoo'" buttonStyle="round" hideIconModal size="4"
+                language="en"></add-to-calendar-button>
         </div>
 
-        <script>
-            // Attach click handler to all Add to Calendar buttons
-            document.querySelectorAll('#addToCalendarBtn').forEach(function (button) {
-                button.onclick = function () {
-                    document.getElementById('calendarModal').style.display = 'block';
-                };
-            });
-
-            // Attach click handler to all Close buttons
-            document.querySelectorAll('#closeModal').forEach(function (button) {
-                button.onclick = function () {
-                    document.getElementById('calendarModal').style.display = 'none';
-                };
-            });
-        </script>
         <!-- English Timeline -->
         <div class="lang-en">
             <h2 class="timeline-header">Wedding Weekend Schedule</h2>
@@ -491,7 +426,8 @@
                     <div class="icon">👨‍👩‍👧‍👦</div>
                     <div class="content">
                         <div class="time">Wednesday</div>
-                        <div class="info">Family arrives and settles in to Emporio Cancún<br><small>If you're in town
+                        <div class="info">Family arrives and settles in to Emporio Cancún<br><small>If you're in
+                                town
                                 early, we'd love to
                                 see you — but Wednesday is for family.</small></div>
                     </div>
@@ -501,7 +437,8 @@
                     <div class="icon">🍹</div>
                     <div class="content">
                         <div class="time">Thursday (Sunset)</div>
-                        <div class="info">Icebreaker at the hotel: drinks, canapés, and mingling for all guests!</div>
+                        <div class="info">Icebreaker at the hotel: drinks, canapés, and mingling for all guests!
+                        </div>
                     </div>
                 </div>
 
@@ -590,7 +527,8 @@
                     <div class="icon">👨‍👩‍👧‍👦</div>
                     <div class="content">
                         <div class="time">Miércoles</div>
-                        <div class="info">La familia llega y se instala<br><small>Si ya estás en Cancún, ¡nos encantaría
+                        <div class="info">La familia llega y se instala<br><small>Si ya estás en Cancún, ¡nos
+                                encantaría
                                 verte! Pero este día es exclusivo para la familia.</small></div>
                     </div>
                 </div>
@@ -954,9 +892,30 @@
     <div class="leaf-divider alt"></div>
     <!-- RSVP Section -->
     <div class="rsvp-container" id="rsvp">
-        <a class="rsvp-btn lang-en" href="https://withjoy.com/bety-and-lucas/rsvp">RSVP Now</a>
+        <section class="location lang-en" style="font-size:xx-large;">👇 Action
+            Items 👇
+        </section>
+        <a class="rsvp-btn lang-en" href="https://withjoy.com/bety-and-lucas/rsvp"><i
+                class="fa-solid fa-calendar-plus"></i> RSVP Now <i class="fa-solid fa-calendar-check"></i></a>
+        <div class="rsvp-block lang-en">
+            <add-to-calendar-button name="Bety + Lucas Get Married" startDate="2026-03-04" endDate="2026-03-07"
+                timeZone="America/Cancun" location="Cancun, Mexico"
+                icsFile="https://calendar.google.com/calendar/ical/d7247e5844f86f17d80cb5fcbd86635beaf14e685ca690f9134023203dcdddad%40group.calendar.google.com/public/basic.ics"
+                availability="busy" subscribe options="'Apple','Google','iCal','Outlook.com','Yahoo'" buttonStyle="date"
+                hideIconModal size="4" language="en"></add-to-calendar-button>
+        </div>
         <a class="rsvp-btn back-btn lang-en" href="/rsvp">back to invite</a>
         <a class="rsvp-btn lang-es hidden" href="https://withjoy.com/bety-and-lucas/rsvp">Confirmar Asistencia</a>
+
+        <div class="rsvp-block lang-es">
+            <add-to-calendar-button name="Bety y Lucas: la boda!" startDate="2026-03-04" endDate="2026-03-07"
+                timeZone="America/Cancun" location="Cancun, Mexico"
+                icsFile="https://calendar.google.com/calendar/ical/d7247e5844f86f17d80cb5fcbd86635beaf14e685ca690f9134023203dcdddad%40group.calendar.google.com/public/basic.ics"
+                availability="busy" subscribe options="'Apple','Google','iCal','Outlook.com','Yahoo'" buttonStyle="date"
+                hideIconModal size="4" language="es"></add-to-calendar-button>
+        </div>
+
+
         <a class="rsvp-btn back-btn lang-es" href="/rsvp">volver a la invitación</a>
     </div>
     <div class="leaf-divider"></div>

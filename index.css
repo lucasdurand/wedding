@@ -205,15 +205,30 @@ section {
     text-decoration: none;
     border-radius: 1.5rem;
     font-weight: bold;
+    font-size:x-large;
     margin: 2rem auto;
     text-align: center;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+.rsvp-block {
+    display: table;
+    background-color: var(--color3);
+    padding:1rem;
+    margin: auto;
+    text-decoration: none;
+    border-radius: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
 .back-btn {
     background: var(--color2);
     padding:1rem;
+    font-size: unset;
     display:table;
 }
 
