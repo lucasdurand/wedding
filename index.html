@@ -33,6 +33,7 @@
     <link href="./leaves.css" rel="stylesheet" />
     <link href="./timeline.css" rel="stylesheet" />
     <link href="./photos.css" rel="stylesheet" />
+    <link href="./tooltip.css" rel="stylesheet" />
     <script src="./common.js"></script>
 
     <!-- Dependencies -->
@@ -363,7 +364,8 @@
                         <p class="lang-en">
                             🏨 We'll be staying at <strong>Emporio Cancún </strong> — our home base for the weekend!
                             🚐 Transportation to the wedding and
-                            🍹 our Friday icebreaker will happen here.
+                            🍹 our Friday icebreaker will happen here. There is a 3 night minimum and the rate extends a
+                            few days before/after the main event.
                             <strong>You're free to stay elsewhere, but we recommend Emporio for the full
                                 experience.</strong>
                         </p>
@@ -398,7 +400,7 @@
                             </li>
                             <li>Phone: +52 (998) 283-3800 - Reservations department.</li>
                         </ol>
-                        Any special room requests you can call or email directly.
+                        Any special room requests you can call or email <em>Emporio</em> directly.
                         </p>
                     </div>
                     <div class="lang-es hidden">
@@ -414,7 +416,7 @@
                         <p>Hay tres formats de hacer la reservación en el Hotel Emporio
                         <ol>
                             <li>En <a
-                                    href="https://reservations.hotelesemporio.com/EmporioCancun/book/dates-of-stay?groupID=4849018">
+                                    href="https://reservations.hotelesemporio.com/es/EmporioCancun/book/dates-of-stay?groupID=4849018">
                                     este enlace
                                 </a></li>
                             <li>Email: <a
@@ -427,15 +429,54 @@
                 </div>
             </div>
         </div>
+        <script>function openInfoModal() {
+                document.getElementById('infoModal').classList.add('active');
+            }
+
+            function closeInfoModal() {
+                document.getElementById('infoModal').classList.remove('active');
+            }
+
+            function closeIfOutside(e) {
+                if (e.target.id === 'infoModal') {
+                    closeInfoModal();
+                }
+            }</script>
         <div class="lang-en">
             <!-- Transportation Options -->
             <h4>Getting to Emporio Cancún</h4>
             <div class="transport-options">
                 <div class="transport-card">
                     <h4><i class="fas fa-plane"></i> Flights</h4>
-                    <p>Find your way to Cancún Airport (CUN)! If you're coming from Toronto or Veracruz
-                        we are working with a travel agent to schedule group flights.
-                    </p>
+                    <p>Find your way to Cancún Airport (CUN)! If you're coming from Toronto, we have one group flight
+                        - <a onclick="openInfoModal()">click here for more info!</a>
+
+                    <div id="infoModal" class="info-modal-overlay" onclick="closeIfOutside(event)">
+                        <div class="announcement">
+                            <button class="dismiss" onclick="closeInfoModal()">×</button>
+                            <h4>YYZ - CUN Group Flight</h4>
+                            <ul>
+                                <li>
+                                    ✈️ Flight F82610 (Flair), Wednesday March 4, 2026: 7:25am YYZ ➡️
+                                    11:50am CUN.
+                                </li>
+                                <li> ✈️ Return F82613 (Flair) Sunday March 8, 2026: 6:50pm CUN ➡️
+                                    11:55pm YYZ.
+                                </li>
+                                <li>💵 $CAD 710/person.
+                                </li>
+                                <li>💬 Contact
+                                    <span class="tooltip">Janice Durand<span class="tooltiptext">(905) 704-8310</span>
+                                    </span> if interested.
+                                </li>
+                                <li>Seats subject to
+                                    availability!
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
                 </div>
                 <div class="transport-card">
                     <h4><i class="fas fa-shuttle-van"></i> Hotel Shuttle</h4>
