@@ -16,6 +16,10 @@ body {
     line-height: 1.6;
 }
 
+a {
+    color: var(--color3);
+}
+
 body{
     background-image: url('./assets/leaves/tropical-background2.png');
     background-size: 13rem;
