@@ -244,6 +244,10 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.rsvp-btn sub {
+    display:block;
+    font-size: small;
+}
 
 .rsvp-block {
     display: table;
